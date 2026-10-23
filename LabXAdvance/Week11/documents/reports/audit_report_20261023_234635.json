@@ -1,0 +1,150 @@
+[
+    {
+        "timestamp": "2026-10-23T23:46:35.490180",
+        "status": "INFO",
+        "task_type": "agent_run",
+        "message": "Document Agent started.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.490229",
+        "status": "INFO",
+        "task_type": "generate_word_report",
+        "message": "Starting task 'Generate Monthly Performance Report'",
+        "details": {
+            "name": "Generate Monthly Performance Report",
+            "type": "generate_word_report",
+            "template_path": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/templates/report_template.docx",
+            "output_path": "documents/generated_report.docx",
+            "data": {
+                "REPORT_TITLE": "Monthly Performance Summary",
+                "INTRODUCTION_TEXT": "This automated report provides a summary of key performance indicators.",
+                "MONTH_PERIOD": "August 2026"
+            },
+            "table_data": [
+                [
+                    "Category",
+                    "Value",
+                    "Trend"
+                ],
+                [
+                    "Sales Revenue",
+                    "$120,000",
+                    "Up 10%"
+                ],
+                [
+                    "Customer Acquisition",
+                    "500",
+                    "Stable"
+                ],
+                [
+                    "Project Completion Rate",
+                    "95%",
+                    "Excellent"
+                ]
+            ]
+        }
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.505224",
+        "status": "SUCCESS",
+        "task_type": "generate_word_report",
+        "message": "Task 'Generate Monthly Performance Report' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.505253",
+        "status": "INFO",
+        "task_type": "apply_pdf_watermark",
+        "message": "Starting task 'Apply Confidential Watermark to PDF'",
+        "details": {
+            "name": "Apply Confidential Watermark to PDF",
+            "type": "apply_pdf_watermark",
+            "input_pdf": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/source_document.pdf",
+            "output_pdf": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/watermarked_document.pdf",
+            "watermark_text": "CONFIDENTIAL",
+            "font_size": 70,
+            "color": [
+                1,
+                0,
+                0,
+                0.15
+            ],
+            "angle": 55
+        }
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.532380",
+        "status": "SUCCESS",
+        "task_type": "apply_pdf_watermark",
+        "message": "Task 'Apply Confidential Watermark to PDF' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.532427",
+        "status": "INFO",
+        "task_type": "merge_pdfs",
+        "message": "Starting task 'Merge Project Documentation'",
+        "details": {
+            "name": "Merge Project Documentation",
+            "type": "merge_pdfs",
+            "input_pdfs": [
+                "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/dummy_doc1.pdf",
+                "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/dummy_doc2.pdf"
+            ],
+            "output_pdf": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/merged_docs.pdf"
+        }
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.540492",
+        "status": "SUCCESS",
+        "task_type": "merge_pdfs",
+        "message": "Task 'Merge Project Documentation' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.540588",
+        "status": "INFO",
+        "task_type": "extract_word_text",
+        "message": "Starting task 'Extract Text from Generated Word Report'",
+        "details": {
+            "name": "Extract Text from Generated Word Report",
+            "type": "extract_word_text",
+            "input_docx": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/generated_report.docx",
+            "output_text_file": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/extracted_word_text.txt"
+        }
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.543663",
+        "status": "SUCCESS",
+        "task_type": "extract_word_text",
+        "message": "Task 'Extract Text from Generated Word Report' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.543699",
+        "status": "INFO",
+        "task_type": "extract_pdf_text",
+        "message": "Starting task 'Extract Text from Source PDF'",
+        "details": {
+            "name": "Extract Text from Source PDF",
+            "type": "extract_pdf_text",
+            "input_pdf": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/source_document.pdf",
+            "output_text_file": "/Users/fahnuea/Documents/Script Prog/Script-Programming/LabXAdvance/Week11/documents/extracted_pdf_text.txt"
+        }
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.553611",
+        "status": "SUCCESS",
+        "task_type": "extract_pdf_text",
+        "message": "Task 'Extract Text from Source PDF' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-23T23:46:35.553660",
+        "status": "INFO",
+        "task_type": "agent_run_summary",
+        "message": "Finished in 0.06s.",
+        "details": {}
+    }
+]
