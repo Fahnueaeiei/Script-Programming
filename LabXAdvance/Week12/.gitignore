@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+.vscode/
+.env
+*.log
+data/attachments/*
+data/incoming_attachments/*
+reports/*
+!.gitkeep
