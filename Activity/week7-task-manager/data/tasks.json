@@ -10,5 +10,11 @@
         "description": "Review Week 7 lecture",
         "completed": false,
         "priority": "Low"
+    },
+    {
+        "id": 3,
+        "description": "do homework",
+        "completed": false,
+        "priority": "Medium"
     }
 ]
