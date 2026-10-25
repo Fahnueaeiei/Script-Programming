@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "description": "Finish Week 8 OOP assignment",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "description": "Review Python classes",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "description": "something",
+        "completed": true
+    }
+]
