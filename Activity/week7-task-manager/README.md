@@ -36,18 +36,3 @@ python3 main.py
 ```
 
 Select **2. List All Tasks** to view the two included example tasks (one DONE and one PENDING). Choose **8. Save and Exit** to save changes to `data/tasks.json`.
-
-## GitHub
-
-Create a new empty GitHub repository, then run:
-
-```bash
-git init
-git add .
-git commit -m "Complete Week 7 Task Manager CLI"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/week7-task-manager.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username.
